@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 2 DF2</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div>
+        <h2>Puedes llevar hasta 10 stikers en total</h2>
+        <div class="flex-container">
+            <img src="https://placedog.net/390" alt="">
+            <img src="https://placedog.net/400" alt="">
+            <img src="https://placedog.net/350" alt="">
+        </div>
+        <div class="flex-container">
+            <input type="text" id="input-1">
+            <input type="text" id="input-2">
+            <input type="text" id="input-3">
+        </div>
+        <p id="par"></p>
+        <button onclick="
+            input1 = document.querySelector('#input-1').value
+            input2 = document.querySelector('#input-2').value
+            input3 = document.querySelector('#input-3').value
+            par = document.querySelector('#par')
+            sumaInputs = Number(input1) + Number(input2) + Number(input3);
+
+            if(sumaInputs <= 10){
+                par.innerHTML = 'Llevas ' + sumaInputs + ' stickers'
+            } 
+            else{
+                par.innerHTML = 'Llevas ' = 'Llevas demasiados stickers :c!!'
+            }
+        ">Verificar</button>
+    </div>
+</body>
+</html>
